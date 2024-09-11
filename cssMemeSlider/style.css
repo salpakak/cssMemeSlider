@@ -99,7 +99,20 @@ img {
     margin-left: -400%;
 }
 
-.slider input[type="radio"] {
+/* .slider input[type="radio"] {
     display: none;
+} */
 
+.slider__text p {
+    display: none;
+}
+
+
+#btn-1:checked~.slider__buttons .slider__text .text-1,
+#btn-2:checked~.slider__buttons .slider__text .text-2,
+#btn-3:checked~.slider__buttons .slider__text .text-3,
+#btn-4:checked~.slider__buttons .slider__text .text-4,
+#btn-5:checked~.slider__buttons .slider__text .text-5 {
+    display: block;
+    transition: 1s;
 }
