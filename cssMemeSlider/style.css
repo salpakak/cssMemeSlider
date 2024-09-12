@@ -39,16 +39,15 @@ body {
     font-size: clamp(0.5rem, 4vw, 1.5rem);
 }
 
-.btn-wrapper{
+.btn-wrapper {
     display: flex;
     gap: 1rem;
     margin: 0.2rem;
     cursor: pointer;
 }
-.btn-wrapper btn{
 
-    
-}
+.btn-wrapper btn {}
+
 .btn {
     height: 20rem;
     width: 20rem;
@@ -81,27 +80,30 @@ img {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
-    
+
+
 }
+
 .btn-wrapper label {
     height: 30rem;
     width: 30rem;
     cursor: pointer;
 }
+
 .slider__btn .btn:hover {
     background-color: rgb(188, 156, 26);
     transition: 0.5s;
 }
-.slider__btn .btn:active{
-    background-color: rgb(196, 70, 70);
-}
-.slider__btn .btn:focus{
+
+.slider__btn .btn:focus {
     outline: 0.15rem solid #000000;
     background-color: rgb(26, 126, 24);
     transition: 0.1s;
 }
 
+.slider__btn .btn:active {
+    background-color: rgb(196, 70, 70);
+}
 
 
 #btn-1:checked~.slider__images {
@@ -134,16 +136,17 @@ img {
     animation-duration: 2s;
     animation-name: animationText;
 }
-@keyframes animationText {
-  from {
-    opacity: 0;
-    width: 100%;
-  }
 
-  to {
-    opacity: 100%;
-    width: 100%;
-  }
+@keyframes animationText {
+    from {
+        opacity: 0;
+        width: 100%;
+    }
+
+    to {
+        opacity: 100%;
+        width: 100%;
+    }
 }
 
 
@@ -155,4 +158,11 @@ img {
     display: block;
     visibility: visible;
     opacity: 1;
+}
+
+@media (max-width: 501px) {
+    .slider__buttons {
+        flex-direction: column-reverse;
+        row-gap: 1rem;
+    }
 }
