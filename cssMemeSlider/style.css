@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-    padding-top: 50px;
+    padding-top: 5rem;
     max-width: 65%;
     margin: 0 auto;
     overflow: hidden;
@@ -35,14 +35,13 @@ body {
 }
 
 .slider__text {
-    font-size: 20px;
-
+    font-size: clamp(0.5rem, 4vw, 1.5rem);
 }
 
 
 .btn {
-    height: 20px;
-    width: 20px;
+    height: 20rem;
+    width: 20rem;
     cursor: pointer;
 }
 
@@ -60,11 +59,12 @@ img {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-right: 0.2rem;
 }
 
 .slider__btn .btn {
-    width: 20px;
-    height: 20px;
+    width: 1rem;
+    height: 1rem;
     background-color: rgb(131, 131, 131);
     border-radius: 50%;
     display: flex;
@@ -76,6 +76,14 @@ img {
 .slider__btn .btn:hover {
     background-color: rgb(229, 192, 47);
     transition: 0.5s;
+}
+.slider__btn .btn:active{
+    background-color: rgb(196, 70, 70);
+}
+.slider__btn .btn:focus{
+    outline: 0.15rem solid #000000;
+    background-color: rgb(26, 126, 24);
+    transition: 0.1s;
 }
 
 
@@ -106,7 +114,7 @@ img {
 
 .slider__text p {
     display: none;
-    margin-right: 10px;
+    margin-right: 1rem;
     animation-duration: 2s;
     animation-name: animationText;
 }
