@@ -27,6 +27,7 @@ body {
 .slider__images {
     display: flex;
     width: 500%;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgb(149, 149, 149);
     transition: all 2s ease;
 }
 
@@ -46,7 +47,10 @@ body {
     cursor: pointer;
 }
 
-.btn-wrapper btn {}
+.btn-wrapper span {
+    padding: 15px;
+    cursor: pointer;
+}
 
 .btn {
     height: 20rem;
@@ -74,7 +78,7 @@ img {
 .slider__btn .btn {
     width: 1rem;
     height: 1rem;
-    background-color: rgb(131, 131, 131);
+    background-color: rgb(202, 137, 137);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -91,13 +95,13 @@ img {
 }
 
 .slider__btn .btn:hover {
-    background-color: rgb(188, 156, 26);
+    background-color: rgb(116, 190, 117);
     transition: 0.5s;
 }
 
 .slider__btn .btn:focus {
-    outline: 0.15rem solid #000000;
-    background-color: rgb(26, 126, 24);
+    outline: 0.15rem solid #725e8d;
+    background-color: rgb(125, 114, 145);
     transition: 0.1s;
 }
 
