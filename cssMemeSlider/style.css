@@ -105,10 +105,21 @@ img {
 }
 
 .slider__text p {
+    display: none;
     margin-right: 10px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    animation-duration: 2s;
+    animation-name: animationText;
+}
+@keyframes animationText {
+  from {
+    margin-left: 50%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 
