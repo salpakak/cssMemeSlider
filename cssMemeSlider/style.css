@@ -100,7 +100,7 @@ img {
 }
 
 .slider__btn .btn:focus {
-    outline: 0.15rem solid #725e8d;
+    border: 0.15rem solid #725e8d;
     background-color: rgb(125, 114, 145);
     transition: 0.1s;
 }
@@ -173,4 +173,5 @@ img {
     .wrapper {
         max-width: 90%;
     }
+
 }
