@@ -164,7 +164,7 @@ img {
     opacity: 1;
 }
 
-@media (max-width: 501px) {
+@media (max-width: 500px) {
     .slider__buttons {
         flex-direction: column-reverse;
         row-gap: 1rem;
