@@ -169,4 +169,8 @@ img {
         flex-direction: column-reverse;
         row-gap: 1rem;
     }
+
+    .wrapper {
+        max-width: 90%;
+    }
 }
