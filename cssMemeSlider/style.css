@@ -35,10 +35,20 @@ body {
 }
 
 .slider__text {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: clamp(0.5rem, 4vw, 1.5rem);
 }
 
+.btn-wrapper{
+    display: flex;
+    gap: 1rem;
+    margin: 0.2rem;
+    cursor: pointer;
+}
+.btn-wrapper btn{
 
+    
+}
 .btn {
     height: 20rem;
     width: 20rem;
@@ -71,10 +81,16 @@ img {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    
+    
 }
-
+.btn-wrapper label {
+    height: 30rem;
+    width: 30rem;
+    cursor: pointer;
+}
 .slider__btn .btn:hover {
-    background-color: rgb(229, 192, 47);
+    background-color: rgb(188, 156, 26);
     transition: 0.5s;
 }
 .slider__btn .btn:active{
@@ -120,12 +136,12 @@ img {
 }
 @keyframes animationText {
   from {
-    margin-left: 50%;
+    opacity: 0;
     width: 100%;
   }
 
   to {
-    margin-left: 0%;
+    opacity: 100%;
     width: 100%;
   }
 }
